@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap&family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* GLOBAL */
+html{
+    scroll-behavior: smooth;
+}
+
+.content{
+    max-width: 1600px;
+    padding: 40px;
+    margin: auto;
+}
+
+/* HEADER */
+.header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+}
+
+.header .content{
+    width: 100%;
+    height: 100%;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .content .logo img{
+    width: 50px;
+    cursor: pointer;
+}
+
+.header .content .info{
+    display: flex;
+    align-items: center;
+}
+
+.header .content .info .btn-download{
+    padding: 10px 15px;
+    font-weight: 100;
+    border: none;
+    border-radius: 50px;
+    color: #FFFFFF;
+    background-color: #212121;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
+.header .content .info .btn-download:hover{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.header .content .info i{
+    font-size: 40px;
+    color: #212121;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
+.header .content .info i:hover{
+    color: rgba(0, 0, 0, .5);
+}
+
+/* HOME */
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%);
+}
+
+.home .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .content .left{
+    width: 45%;
+}
+
+.home .content .left .title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 195px;
+    line-height: .55;
+    padding-bottom: 35px;
+    color: #212121;
+}
+
+.home .content .left .title .smaller-title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 110px;
+}
+
+.home .content .left .text{
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    padding-bottom: 40px;
+    color: #212121;
+}
+
+.home .content .left .buttons{
+    display: flex;
+}
+
+.home .content .left .button{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px 70px;
+    border: none;
+    font-size: 19px;
+    font-weight: 100;
+    background: #ccc;
+    cursor: pointer;
+    color: black;
+
+    transition: all .5s ease;
+    margin-right: 20px;
+}
+
+.home .content .left .button:hover{
+    transform: scale(1.06);
+}
+
+.home .content .left .buttons .how-it{
+    border: 2px solid #212121;
+    font-weight: 500;
+    color: #212121;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.home .content .right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .content .right img{
+    width: 500px;
+}
+
+/* ABOUT */
+.about{
+    width: 100%;
+    background: #F2F2F2;
+}
+
+.about .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .content .left{
+    width: 45%;
+}
+
+.about .content .left img{
+    width: 450px;
+}
+
+.about .content .right{
+    width: 45%;
+}
+
+.about .content .right .title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 90px;
+    font-weight: 300;
+    color: #212121;
+}
+
+.about .content .right .text{
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.8;
+    text-align: justify;
+    color: #212121;
+    padding-bottom: 35px;
+}
+
+.about .content .right .tech{
+    display: flex;
+}
+
+.about .content .right .tech p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 30px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #212121;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
+.about .content .right .tech p:hover{
+    transform: scale(1.1);
+}
+
+/* DOWNLOAD */
+.download{
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(193,193,193,1) 100%);
+}
+
+.download .content{
+    width: 100%;
+    height: 100%;
+}
+
+.download .content .title{
+    font-family: 'Bebas Neue', sans-serif;
+    width: 100%;
+    font-size: 90px;
+    font-weight: 300;
+    color: #212121;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.download .content .title-cards{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: #212121;
+}
+
+.download .content .text{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #212121;
+    text-align: center;
+}
+
+.download .content .cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download .content .cards .card{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.download .content .cards .card .card-1{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.download .content .cards .card .card-2{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    border-radius: 15px;
+}
+
+.download .content .cards .card i{
+    font-size: 180px;
+}
+
+.download .content .cards .card .card-1 i{
+    color: #212121;
+}
+
+.download .content .cards .card .card-2 i{
+    color: #FFFFFF;
+}
+
+.download .content .cards .card .snake{
+    display: none;
+    padding: 6px;
+    font-size: 15px;
+}
+
+.download .content .cards .sn-card-1{
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #212121;
+}
+
+.download .content .cards .sn-card-1:hover .snake{
+    display: block;
+}
+
+.download .content .cards .sn-card-2{
+    font-weight: 500;
+    color: #212121;
+    background-color: #FFFFFF;
+}
+
+.download .content .cards .sn-card-2:hover .snake{
+    display: block;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    background-color: #212121;
+    color: #FFFFFF;
+}
+
+.footer .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.footer .copyright{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.footer .social{
+    font-size: 25px;
+}
+
+.footer .social i{
+    margin-left: 15px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 1142px){
+    .home .content .right img{
+        width: 400px;
+    }
+    .download .content .cards .card{
+        width: 400px;
+        height: 350px;
+    }
+    
+    .download .content .cards .card .card-1{
+        width: 400px;
+        height: 350px;
+    }
+    
+    .download .content .cards .card .card-2{
+        width: 400px;
+        height: 350px;
+    }
+}
+
+@media(max-width: 1007px){
+    .home{
+        height: auto;
+    }
+    .home .content{
+        flex-direction: column-reverse;
+    }
+    .home .content .right{
+        width: 100%;
+    }
+    .home .content .left{
+        width: 100%;
+    }
+    .home .content .left .title{
+        font-size: 60px;
+        padding-bottom: 10px;
+    }
+    .home .content .left .text{
+        padding-bottom: 20px;
+    }
+    .home .content .right{
+        flex-direction: column;
+    }
+    .home .content .right img{
+        width: 500px;
+        margin: 50px;
+    }
+}
+
+@media(max-width: 971px){
+    .about{
+        height: auto;
+    }
+    .about .content{
+        flex-direction: column;
+    }
+    .about .content .left{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about .content .right{
+        width: 100%;
+    }
+    .about .content .right .title{
+        text-align: center;
+    }
+}
+
+@media(max-width: 914px){
+    .download{
+        height: auto;
+    }
+
+    .download .content .cards{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 718px){
+    .donwload .content .cards{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 602px){
+    .home .content .right img{
+        width: 400px;
+    }
+}
